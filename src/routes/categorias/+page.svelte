@@ -19,10 +19,6 @@
 </div>
 
 <style>
-	* {
-		font-family: sans-serif;
-	}
-
 	.background {
 		width: 100%;
 		min-height: 100vh;
