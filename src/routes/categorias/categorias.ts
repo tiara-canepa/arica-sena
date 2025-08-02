@@ -2,7 +2,7 @@ export const categorias: Categoria[] = [
     {
         nombre: 'Saludos Generales',
         nombre_corto: 'saludos',
-        descripcion: 'Formas de saludas a las personas, ya sea a la distancia \
+        descripcion: 'Formas de saludar a las personas, ya sea a la distancia \
             o frente a frente.',
     },
     {
