@@ -11,8 +11,11 @@
 	<div class="categories">
 		{#each categorias as categoria}
 			<div class="category">
-				<h3><a href="categorias/{categoria.nombre_corto}">{categoria.nombre}</a></h3>
-				<p class="cat-body">{categoria.descripcion}</p>
+				<h3>
+					{categoria.icono}
+					<a href="categorias/{categoria.nombre_corto}">{categoria.nombre}</a>
+				</h3>
+				<p>{categoria.descripcion}</p>
 			</div>
 		{/each}
 	</div>
@@ -75,12 +78,9 @@
 		margin: 10px;
 	}
 
-	h3 {
-		font-size: 16;
-	}
-
-	.cat-body {
+	.category > p {
 		color: #757575;
 		font-size: 14px;
+		margin-left: 24px;
 	}
 </style>
