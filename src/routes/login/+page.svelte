@@ -1,3 +1,10 @@
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import type { PageProps } from './$types';
+
+	let { form }: PageProps = $props();
+</script>
+
 <div class="background">
 	<div class="main">
 		<div class="left">
@@ -5,13 +12,18 @@
 		</div>
 		<div class="right">
 			<h2>¡Bienvenido!</h2>
-			<form method="post">
+			<form method="post" action="?/login">
 				<div class="form">
-					<input type="email" placeholder="Email" />
-					<input type="password" placeholder="Contraseña" />
-					<a class="forgot-password" href="">¿Olvidaste tu contraseña?</a>
+					<!-- TODO: Add register/forgot password links -->
+					<input name="email" type="email" placeholder="Email" required />
+					<input name="password" type="password" placeholder="Contraseña" required />
+					<a class="forgot-password" href="/">¿Olvidaste tu contraseña?</a>
 					<button type="submit"><strong>Inicia sesión</strong></button>
-					<a class="register" href="">¿No tienes una cuenta? ¡Crea una!</a>
+					<a class="register" href="/">¿No tienes una cuenta? ¡Crea una!</a>
+					{#if form?.success}
+						<p>Success</p>
+					{/if}
+					<!-- <a class="back">Cancelar</a> -->
 				</div>
 			</form>
 		</div>
@@ -27,6 +39,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		height: 100vh;
 		background: linear-gradient(90deg, #bca0f7 30%, #fae1f6);
 	}
@@ -37,6 +50,7 @@
 		border-radius: 6px;
 		margin: 0 5%;
 		padding: 50px;
+		width: 65%;
 		box-shadow: 0 0 10px 5px #915b9c;
 	}
 
@@ -92,4 +106,13 @@
 	button:hover {
 		background-color: pink;
 	}
+
+	/* .back { */
+	/* 	background-color: #704b9c; */
+	/* 	color: white; */
+	/* 	width: 80px; */
+	/* 	padding: 1em; */
+	/* 	border-radius: 8px; */
+	/* 	text-align: center; */
+	/* } */
 </style>
