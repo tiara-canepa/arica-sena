@@ -36,7 +36,7 @@
 		align-items: center;
 		column-gap: 10px;
 
-		background-color: #915b9c;
+		background-color: var(--purple);
 	}
 
 	a {
@@ -66,7 +66,8 @@
 	footer {
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
-		background-color: pink;
+		background-color: var(--purple);
+		color: white;
 		font-size: 14px;
 	}
 

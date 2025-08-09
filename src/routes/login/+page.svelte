@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import type { PageProps } from './$types';
 
 	let { form }: PageProps = $props();

@@ -25,7 +25,7 @@
 	.background {
 		width: 100%;
 		min-height: 100vh;
-		background: linear-gradient(to bottom, white, #936396 71%);
+		background: linear-gradient(to bottom, white, var(--purple) 71%);
 		padding-top: 10px;
 	}
 
