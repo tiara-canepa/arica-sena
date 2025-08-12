@@ -8,9 +8,7 @@ export const actions = {
         const password = data.get('password');
 
         if (email === 'admin@admin.com' && password === 'admin') {
-            return {
-                success: true
-            }
+            redirect(301, '/');
         }
     },
     register: async (event) => {

@@ -24,7 +24,6 @@
 				<div class="img-rating">
 					<img src={placeholder} alt="Placeholder" />
 					<div class="rating">
-						<p>{course.rating}</p>
 						<p>por {course.author}</p>
 					</div>
 				</div>
@@ -48,7 +47,6 @@
 				<div class="img-rating">
 					<img src={placeholder} alt="Placeholder" />
 					<div class="rating">
-						<p>{lesson.rating}</p>
 						<p>por {lesson.author}</p>
 					</div>
 				</div>

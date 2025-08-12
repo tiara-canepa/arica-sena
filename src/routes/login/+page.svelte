@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
 
-	let { form }: PageProps = $props();
+	// let { form }: PageProps = $props();
 </script>
 
 <div class="background">
@@ -19,9 +19,9 @@
 					<a class="forgot-password" href="/">¿Olvidaste tu contraseña?</a>
 					<button type="submit"><strong>Inicia sesión</strong></button>
 					<a class="register" href="/">¿No tienes una cuenta? ¡Crea una!</a>
-					{#if form?.success}
-						<p>Success</p>
-					{/if}
+					<!-- {#if form?.success} -->
+					<!-- 	<p>Success</p> -->
+					<!-- {/if} -->
 					<!-- <a class="back">Cancelar</a> -->
 				</div>
 			</form>

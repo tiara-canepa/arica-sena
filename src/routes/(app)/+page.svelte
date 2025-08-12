@@ -42,7 +42,6 @@
 	{#each features as feature}
 		<div class="feature">
 			<h3>{feature.titulo}</h3>
-			<p>{feature.descripcion}</p>
 			<!-- TODO: Añadir imágenes a las features -->
 			<img src={placeholder} alt="Placeholder" />
 		</div>
@@ -111,9 +110,13 @@
 		background: linear-gradient(90deg, #935e9f 70%, #c4a9f6);
 	}
 
+	.mission-msg h2 {
+		font-size: 30px;
+	}
+
 	.mission-msg p {
 		text-align: center;
-		font-size: 14px;
+		font-size: 18px;
 		margin: 0 20px;
 	}
 
